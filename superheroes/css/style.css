@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background: #00669f;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #ffffff;
+  margin-top: 50px;
+  padding: 20px 60px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.card {
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 35%;
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 650px;
+}
+
+.card-batman {
+  background-image: url(../img/bg-batman.jpg);
+  background-position-x: -230px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  border-radius: 25px 25px 0 0;
+  height: 250px;
+}
+
+.card i {
+  color: #cc2424;
+  font-size: 30px;
+  left: 25px;
+  position: absolute;
+  top: 15px;
+}
+
+.card-wonder-woman {
+  background-image: url(../img/bg-wonderw.jpg);
+  background-position-x: -230px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  border-radius: 25px 25px 0 0;
+  height: 250px;
+}
+
+.card-superman {
+  background-image: url(../img/bg-superman.jpg);
+  background-position-x: -230px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  border-radius: 25px 25px 0 0;
+  height: 250px;
+}
+
+.descuento {
+  background: #1cd1b0;
+}
+
+.descuento p {
+  color: #000000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.fa-plus {
+  background-color: #00669f;
+  border-radius: 100%;
+  bottom: 25%;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 30px;
+  position: fixed;
+  right: 1%;
+}
+
+footer {
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color:#ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 84px;
+  margin-left: 20px;
+}
+
+header {
+  background: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+img {
+  border-radius: 50%;
+  left: 130px;
+  position: absolute;
+  top: 180px;
+  width: 140px;
+}
+
+.textcard {
+  margin: 80px 20px 20px;
+}
+
+.textcard h2 {
+  color: #000000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.textcard p {
+  color: #333333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+}
+
