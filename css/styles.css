@@ -1,55 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #141314;
+}
+
+.logo {
+    border-radius: 100%;
+    width: 150px;
+    margin: 25px;
+    display: inline-block;
+}
+
 h1 {
-    color:rgb(0, 0, 138);
-    word-spacing: 40px;
-    letter-spacing: 5px;
-    background-color: #BFBFBF; 
+    color:#dbd8d9;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 5px; 
     text-transform: uppercase;
 }
 
 h2 {
-    color:rgba(138, 9, 0, 0.651);
+    margin-top: 75px;
+    color:#141314;
     word-spacing: 15px;
     letter-spacing: 5px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
     background-color: #BFBFBF;
-    font-size: 18px;
     text-transform: uppercase;
 }
 
-.header-img {
-    width: 500px;
-    border-radius: 25px;
-    margin-top: 10px;
+i {
+    color:rgb(207, 160, 5);
+    font-size: 40px;
 }
 
-body {
-    font-family: Calibri, Arial, Helvetica, sans-serif;
+li {
+    margin-top: 45px;
 }
 
-header {
-    background-color: #dddddd;
-    text-align: center;
-}
-
-main {
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: left;
+ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #BFBFBF;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 footer {
-    background-color: #1F497D;
+    color:#141314;
     text-align: center;
-    color: wheat;
     font-size: 24px;
     line-height: 40px;
+    margin-top: 100px;
     margin-bottom: 0px;
 }
 
-.iconos-footer {
-    align-content: center;
-    width: 20px;
+footer p {
+    background-color: #BFBFBF;
+    padding: 30px;
 }
 
-  
-  
+.contacto {
+    color: #141314;
+    margin-left: 25px;
+    width: 30px;
+}
