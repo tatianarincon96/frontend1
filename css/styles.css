@@ -1,74 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
-
-body {
-    background-color: #141314;
-}
-
-.logo {
-    border-radius: 100%;
-    width: 150px;
-    margin: 25px;
-    display: inline-block;
-}
-
-h1 {
-    color:#dbd8d9;
-    text-align: center;
-    margin: 0px;
-    letter-spacing: 5px; 
-    text-transform: uppercase;
-}
-
-h2 {
-    margin-top: 75px;
-    color:#141314;
-    word-spacing: 15px;
-    letter-spacing: 5px;
-    font-size: 30px;
-    padding: 20px;
-    text-align: center;
-    background-color: #BFBFBF;
-    text-transform: uppercase;
-}
-
-i {
-    color:rgb(207, 160, 5);
-    font-size: 40px;
-}
-
-li {
-    margin-top: 45px;
-}
-
-ul li a {
-    text-decoration: none;
-    margin-left: 20px;
-    color: #BFBFBF;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-footer {
-    color:#141314;
-    text-align: center;
-    font-size: 24px;
-    line-height: 40px;
-    margin-top: 100px;
-    margin-bottom: 0px;
-}
-
-footer p {
-    background-color: #BFBFBF;
-    padding: 30px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .contacto {
-    color: #141314;
-    margin-left: 25px;
-    width: 30px;
+  color: #141314;
+  margin-left: 25px;
+  width: 30px;
+}
+
+.logo {
+  border-radius: 100%;
+  display: inline-block;
+  margin: 25px;
+  width: 150px;
+}
+
+body {
+  background-color: #141314;
+}
+
+footer {
+  color: #141314;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer p {
+  background-color: #bfbfbf;
+  padding: 30px;
+}
+
+h1 {
+  color: #dbd8d9;
+  letter-spacing: 5px;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  background-color: #bfbfbf;
+  color: #141314;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-top: 75px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 15px;
+}
+
+i {
+  color: rgb(207, 160, 5);
+  font-size: 40px;
+}
+
+li {
+  margin-top: 45px;
+}
+
+ul li a {
+  color: #bfbfbf;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 20px;
+  text-decoration: none;
 }
