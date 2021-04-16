@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital@1&family=Roboto&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <div class="descuento">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <h1>Nombre Tienda</h1>
+    </header>
+    <main>
+        <div class="registro-nuevo">
+            <h2>Registro</h2>
+            <form class="form" action="contacto.html" method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="brasil">Brasil</option>
+                </select>
+
+                <input type="reset" value="Resetear" id="resetear">
+
+                <input type="submit" value="Entrar" id="entrar">
+            </form>
+            <p>
+                <a class="form-enlace" href="">¿Ya tenés una cuenta?</a>
+                Ingresá
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a Tatiana Rincon © </p>
+    </footer>
+</body>
+</html>
