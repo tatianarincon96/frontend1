@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital@1&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <div class="descuento">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <h1>Nombre Tienda</h1>
+    </header>
+    <main>
+        <section>
+            <div class="caja-formulario">
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <form action="#">
+                    <div>
+                        <div class="column">
+                            *<label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha">
+
+                            <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                                placeholder="Descripcion"></textarea>
+                        </div>
+
+                        <div class="column">
+                            *<label for="especie">Especie</label>
+                            <select name="especie" id="especie" required>
+                                <option value="hum1">Humano 1</option>
+                                <option value="hum2">Humano 2</option>
+                                <option value="hum3">Humano 3</option>
+                            </select>
+
+                            <p>Poderes</p>
+                            
+                            <input type="file" id="foto" name="foto" accept=".jpg,.png" multiple>
+                            <label for="foto">Agregar Foto</label>
+
+                            <input type="checkbox" id="volar" name="poderes" value="volar">
+                            <label for="poderes">Volar</label>
+                            
+                            <input type="checkbox" id="superinteligencia" name="poderes" value="superinteligencia">
+                            <label for="poderes">Superinteligencia</label>
+                            
+                            <input type="checkbox" id="vision-rayo-laser" name="poderes" value="vision-rayo-laser">
+                            <label for="poderes">Visión de rayo láser</label>
+                            
+                            <input type="checkbox" id="billetera-gorda" name="poderes" value="billetera-gorda">
+                            <label for="poderes">Billetera gorda</label>
+                            
+
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a Tatiana Rincon © </p>
+    </footer>
+</body>
+
+</html>
