@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital@1&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -29,48 +28,54 @@
                 <h2>Añadí tu super!</h2>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
                 <form action="#">
-                    <div>
-                        <div class="column">
-                            *<label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" required>
+                    <div class="columna1">
+                        <label for="nombre">* Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
 
-                            <label for="fecha">Fecha</label>
-                            <input type="date" id="fecha" name="fecha">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
 
-                            <textarea name="descripcion" id="descripcion" cols="30" rows="10"
-                                placeholder="Descripcion"></textarea>
-                        </div>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                            placeholder="Descripcion"></textarea>
+                    </div>
 
-                        <div class="column">
-                            *<label for="especie">Especie</label>
-                            <select name="especie" id="especie" required>
-                                <option value="hum1">Humano 1</option>
-                                <option value="hum2">Humano 2</option>
-                                <option value="hum3">Humano 3</option>
-                            </select>
+                    <div class="columna2">
+                        <label for="especie">* Especie</label>
+                        <select name="especie" id="especie" required>
+                            <option value="hum1">Humano 1</option>
+                            <option value="hum2">Humano 2</option>
+                            <option value="hum3">Humano 3</option>
+                        </select>
 
-                            <p>Poderes</p>
-                            
-                            <input type="file" id="foto" name="foto" accept=".jpg,.png" multiple>
-                            <label for="foto">Agregar Foto</label>
+                        <label for="foto">Agregar Foto</label>
+                        <input type="file" id="foto" name="foto" accept=".jpg,.png" multiple>
 
-                            <input type="checkbox" id="volar" name="poderes" value="volar">
-                            <label for="poderes">Volar</label>
-                            
-                            <input type="checkbox" id="superinteligencia" name="poderes" value="superinteligencia">
-                            <label for="poderes">Superinteligencia</label>
-                            
-                            <input type="checkbox" id="vision-rayo-laser" name="poderes" value="vision-rayo-laser">
-                            <label for="poderes">Visión de rayo láser</label>
-                            
-                            <input type="checkbox" id="billetera-gorda" name="poderes" value="billetera-gorda">
-                            <label for="poderes">Billetera gorda</label>
-                            
+                        <p class="poderes">Poderes</p>
 
+                        <label for="volar" class="vert"><input type="checkbox" id="volar" name="poderes"
+                                value="volar">Volar</label>
 
-                        </div>
+                        <label for="superinteligencia" class="vert"><input type="checkbox" id="superinteligencia"
+                                name="poderes" value="superinteligencia">Superinteligencia</label>
+
+                        <label for="vision-rayo-laser" class="vert"> <input type="checkbox" id="vision-rayo-laser"
+                                name="poderes" value="vision-rayo-laser">Visión de rayo láser</label>
+
+                        <label for="billetera-gorda" class="vert"><input type="checkbox" id="billetera-gorda"
+                                name="poderes" value="billetera-gorda">Billetera gorda</label>
+
+                        <hr>
+
+                        <p class="tipo-personaje">Tipo de Personaje</p>
+
+                        <label for="heroe-heroina" class="vert"><input type="radio" id="heroe-heroina"
+                                name="heroe-heroina" value="heroe-heroina">Héroe / Heroína</label>
+
+                        <label for="villano-villana" class="vert"><input type="radio" id="villano-villana"
+                                name="villano-villana" value="villano-villana">Villano / Villana</label>
 
                     </div>
+                    <input class="boton-crear" type="submit" value="Añadir">
                 </form>
             </div>
         </section>
