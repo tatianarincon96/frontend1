@@ -1,133 +1,18 @@
 * {
-    box-sizing: border-box;
-    font-family: Inter;
-    padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.caja-formulario {
-  background: #00669f;
-  border-radius: 49.0901px;
-  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
-  height: 832px;
-  width: 954px;
-  margin: 160px 200px;
-  text-align: center;
-}
-
-.columna1 {
-  width: 400px;
-  display: inline-block;
-  text-align: left;
-  margin-top: 50px;
-}
-
-.columna2 {
-    width: 400px;
-    display: inline-block;
-    text-align: left; 
-}
-
-label {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-p {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 14px;
-  /* identical to box height, or 70% */
-
-  color: #ffffff;
-}
-
-#nombre,
-#fecha,
-#descripcion,
-#especie {
-  display: block;
-  background: #ffffff;
-  border: 1.53407px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15.3407px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 343px;
-  padding: 20px;
-}
-
-#foto {
-    display: block;
-    padding: 10px;
-    background: #CECECE;
-    border-radius: 5px; 
-    margin-top: 30px;
-    margin-bottom: 30px; 
-}
-
-.vert {
-    display: block;
-    margin-top:20px;
-    margin-bottom: 20px;
-}
-
-input[type=radio],
-input[type=checkbox]{
-    background: #FFFFFF;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    width: 80px;
-}
-
-.boton-crear {
-width: 466px;
-height: 87px;
-
-background: #1CD1B0;
-border-radius: 23.011px;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 44px;
-/* identical to box height, or 110% */
-
-text-align: center;
-
-color: #000000;
-}
-
-h2 {
-  color: #fbfffd;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 72px;
-  text-align: center;
-  padding: 20px 0px;
-}
-
-footer {
-  background: #00669f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  font-size: 20px;
-  margin-top: 50px;
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  color: #ffffff;
-  font-family: Roboto;
+.descuento {
+  background-color: #1cd1b0;
+  color: #000000;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
-  line-height: 84px;
-  margin-left: 20px;
-  margin-top: 0px;
+  line-height: 25px;
+  padding-left: 20px;
 }
 
 header {
@@ -138,15 +23,198 @@ header {
   z-index: 999;
 }
 
-.descuento {
-  background: #1cd1b0;
+header img {
+  display: inline-block;
+  height: 74px;
+  width: 99px;
 }
 
-.descuento p {
-  color: #000000;
+h1 {
+  bottom: 20px;
+  color: #ffffff;
+  display: inline-block;
   font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  margin-left: 20px;
+  position: relative;
+}
+
+nav {
+  background: #001d2d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
   line-height: 50px;
-  margin: 0px 20px;
+  text-decoration: none;
+}
+
+section {
+  display: inline-block;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.caja-formulario {
+  background: #00669f;
+  border-radius: 49.0901px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  height: 950px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 954px;
+}
+
+h2 {
+  color: #fbfffd;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.columna1,
+.columna2 {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  width: 360px;
+}
+
+.columna1 {
+  left: 10%;
+  top: 18%;
+}
+
+.columna2 {
+  right: 10%;
+  top: 18%;
+}
+
+.caja-formulario p,
+label {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.box {
+  background: #ffffff;
+  border-radius: 15.3407px;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  height: 63px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+.box-textarea {
+  font-size: 16px;
+  height: 320px;
+}
+
+.box:focus {
+  background-color: paleturquoise;
+}
+
+input.subir-foto {
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0.1px;
+  z-index: -1;
+}
+
+label[for="foto"] {
+  background-color: #cecece;
+  border-radius: 5px;
+  color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+  padding: 15px 100px 15px 5px;
+  text-align: left;
+}
+
+p.sin-archivo {
+  color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.tipo-personaje, .poderes {
+  padding: 10px 0px ;
+}
+
+#volar,
+#superinteligencia,
+#vision-rayo-laser,
+#billetera-gorda,
+#heroe-heroina,
+#villano-villana {
+  margin-right: 20px;
+  text-align: left;
+  width: unset;
+}
+
+.bloque {
+  display: block;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+.boton-crear {
+  background: #1cd1b0;
+  border-radius: 23.011px;
+  bottom: 20px;
+  color: #000000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  height: 87px;
+  left: 244px;
+  line-height: 44px;
+  position: absolute;
+  width: 466px;
+}
+
+.boton-crear:hover {
+  background-color: #001d2d;
+  transition: all 1s;
+}
+
+footer {
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 1.3em;
+  padding: 1.5%;
+  text-align: center;
 }

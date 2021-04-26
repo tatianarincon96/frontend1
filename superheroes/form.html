@@ -17,62 +17,74 @@
 
 <body>
     <div class="descuento">
-        <p>Descuentos 20%</p>
+        <p>Descuentos 20% en todos los productos</p>
     </div>
     <header>
+        <a href="./index.html"><img src="img/logo.png" alt="icono-tienda"></a>
         <h1>Nombre Tienda</h1>
+        <nav>
+            <ul type="none">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="./index.html">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
             <div class="caja-formulario">
                 <h2>Añadí tu super!</h2>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
-                <form action="#">
+                <form action="./index.html">
                     <div class="columna1">
                         <label for="nombre">* Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input class="box box-nombre" type="text" id="nombre" name="nombre" required tabindex="1">
 
                         <label for="fecha">Fecha</label>
-                        <input type="date" id="fecha" name="fecha">
+                        <input class="box box-fecha" type="date" id="fecha" name="fecha" required tabindex="3">
 
-                        <textarea name="descripcion" id="descripcion" cols="30" rows="10"
-                            placeholder="Descripcion"></textarea>
+                        <textarea class="box box-textarea" name="descripcion" id="descripcion" cols="30" rows="10"
+                            placeholder="Descripcion" tabindex="5"></textarea>
                     </div>
 
                     <div class="columna2">
                         <label for="especie">* Especie</label>
-                        <select name="especie" id="especie" required>
-                            <option value="hum1">Humano 1</option>
-                            <option value="hum2">Humano 2</option>
-                            <option value="hum3">Humano 3</option>
+                        <select class="box box-especie" name="especie" id="especie" required tabindex="2">
+                            <option value="alien">Alien</option>
+                            <option value="mago">Mago</option>
+                            <option value="animal">Animal</option>
+                            <option value="mutante">Mutante</option>
+                            <option value="hechicero">Hechicero</option>
                         </select>
 
-                        <label for="foto">Agregar Foto</label>
-                        <input type="file" id="foto" name="foto" accept=".jpg,.png" multiple>
+                        <p>Agregar Foto</p>
+                        <label for="foto">Seleccionar archivo</label>
+                        <input class="subir-foto" type="file" id="foto" name="foto" accept=".jpg,.png" multiple tabindex="4">
+                        <p class="sin-archivo">No se seleccionó archivo</p>
 
                         <p class="poderes">Poderes</p>
 
-                        <label for="volar" class="vert"><input type="checkbox" id="volar" name="poderes"
+                        <label for="volar" class="bloque"><input type="checkbox" id="volar" name="poderes"
                                 value="volar">Volar</label>
 
-                        <label for="superinteligencia" class="vert"><input type="checkbox" id="superinteligencia"
+                        <label for="superinteligencia" class="bloque"><input type="checkbox" id="superinteligencia"
                                 name="poderes" value="superinteligencia">Superinteligencia</label>
 
-                        <label for="vision-rayo-laser" class="vert"> <input type="checkbox" id="vision-rayo-laser"
+                        <label for="vision-rayo-laser" class="bloque"> <input type="checkbox" id="vision-rayo-laser"
                                 name="poderes" value="vision-rayo-laser">Visión de rayo láser</label>
 
-                        <label for="billetera-gorda" class="vert"><input type="checkbox" id="billetera-gorda"
+                        <label for="billetera-gorda" class="bloque"><input type="checkbox" id="billetera-gorda"
                                 name="poderes" value="billetera-gorda">Billetera gorda</label>
 
                         <hr>
 
                         <p class="tipo-personaje">Tipo de Personaje</p>
 
-                        <label for="heroe-heroina" class="vert"><input type="radio" id="heroe-heroina"
-                                name="heroe-heroina" value="heroe-heroina">Héroe / Heroína</label>
+                        <label for="heroe-heroina" class="bloque"><input type="radio" id="heroe-heroina"
+                                name="tipo-personaje" value="heroe-heroina">Héroe / Heroína</label>
 
-                        <label for="villano-villana" class="vert"><input type="radio" id="villano-villana"
-                                name="villano-villana" value="villano-villana">Villano / Villana</label>
+                        <label for="villano-villana" class="bloque"><input type="radio" id="villano-villana"
+                                name="tipo-personaje" value="villano-villana">Villano / Villana</label>
 
                     </div>
                     <input class="boton-crear" type="submit" value="Añadir">
@@ -84,5 +96,4 @@
         <p>Todos los derechos reservados a Tatiana Rincon © </p>
     </footer>
 </body>
-
 </html>

@@ -5,111 +5,14 @@
   padding: 0;
 }
 
-a {
-  background: #00669f;
-  border-radius: 7px;
-  box-sizing: border-box;
-  color: #ffffff;
-  margin-top: 50px;
-  padding: 20px 60px 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 100px;
-  text-decoration: none;
-  width: 200px;
-}
-
-.card {
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  left: 35%;
-  margin-top: 50px;
-  position: relative;
-  text-align: center;
-  width: 400px;
-  height: 650px;
-}
-
-.card-batman {
-  background-image: url(../img/bg-batman.jpg);
-  background-position-x: -230px;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: 180%;
-  border-radius: 25px 25px 0 0;
-  height: 250px;
-}
-
-.card i {
-  color: #cc2424;
-  font-size: 30px;
-  left: 25px;
-  position: absolute;
-  top: 15px;
-}
-
-.card-wonder-woman {
-  background-image: url(../img/bg-wonderw.jpg);
-  background-position-x: -230px;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: 180%;
-  border-radius: 25px 25px 0 0;
-  height: 250px;
-}
-
-.card-superman {
-  background-image: url(../img/bg-superman.jpg);
-  background-position-x: -230px;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: 180%;
-  border-radius: 25px 25px 0 0;
-  height: 250px;
-}
-
 .descuento {
-  background: #1cd1b0;
-}
-
-.descuento p {
+  background-color: #1cd1b0;
   color: #000000;
-  font-size: 30px;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
-  line-height: 50px;
-  margin-left: 20px;
-}
-
-.fa-plus {
-  background-color: #00669f;
-  border-radius: 100%;
-  bottom: 25%;
-  color: #ffffff;
-  font-size: 30px;
-  padding: 30px;
-  position: fixed;
-  right: 1%;
-}
-
-footer {
-  background: #00669f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  font-size: 20px;
-  margin-top: 50px;
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  color:#ffffff;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 84px;
-  margin-left: 20px;
+  line-height: 25px;
+  padding-left: 20px;
 }
 
 header {
@@ -120,34 +23,157 @@ header {
   z-index: 999;
 }
 
-img {
-  border-radius: 50%;
-  left: 130px;
+header img {
+  display: inline-block;
+  height: 74px;
+  width: 99px;
+}
+
+h1 {
+  bottom: 20px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  margin-left: 20px;
+  position: relative;
+}
+
+nav {
+  background: #001d2d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+section {
+  display: inline-block;
+  margin: 50px auto;
+  width: 30%;
+}
+
+.card {
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 20%;
+  position: relative;
+  text-align: center;
+  width: 70%;
+}
+
+.card:hover {
+  transform: scale(1.1,1.1);
+  transition: 2s;
+}
+
+.top {
+  background-position-x: 45%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  border-radius: 25px 25px 0 0;
+  height: 250px;
+}
+
+.card-batman {
+  background-image: url(../img/bg-batman.jpg);
+}
+
+.card-wonder-woman {
+  background-image: url(../img/bg-wonderw.jpg);
+}
+
+.card-superman {
+  background-image: url(../img/bg-superman.jpg);
+}
+
+.corazon {
+  color: #cc2424;
+  font-size: 2em;
+  left: 5%;
   position: absolute;
-  top: 180px;
-  width: 140px;
+  top: 2%;
+}
+
+.imagen-heroe {
+  border-radius: 50%;
+  left: 30%;
+  position: absolute;
+  top: 28%;
+  width: 38%;
 }
 
 .textcard {
-  margin: 80px 20px 20px;
+  margin-top: 10%;
+  padding: 5%;
+  position: relative;
 }
 
 .textcard h2 {
   color: #000000;
-  font-size: 40px;
+  font-size: 2em;
   font-style: normal;
   font-weight: normal;
   line-height: 75px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .textcard p {
   color: #333333;
-  font-size: 20px;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: normal;
   line-height: 25px;
+  margin-bottom: 70px;
   text-align: left;
 }
 
+.ver-mas {
+  background: #00669f;
+  border-radius: 7px;
+  bottom: 20px;
+  color: #ffffff;
+  padding: 5% 20% 5%;
+  position: relative;
+  text-decoration: none;
+  width: 60%;
+}
+.sumar {
+  background-color: #00669f;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 2em;
+  padding: 2.5%;
+  position: fixed;
+  right: 1%;
+  top: 50%;
+}
+
+.sumar:hover {
+  background-color: #001d2d;
+  transition: all 2s;
+}
+
+footer {
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 1.3em;
+  padding: 1.5%;
+  text-align: center;
+}

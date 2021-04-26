@@ -75,8 +75,7 @@ h2 {
   text-align: left;
 }
 
-input,
-select {
+input {
   border: solid 1.5px black;
   color: black;
   display: block;
@@ -107,8 +106,18 @@ select {
 
 .boton-entrar {
   background-color: #1cd1b0;
+  border-radius: 23.011px;
+  border: none;
   color: #000000;
-  margin-left: 5%;
+  display: inline-block;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 0px 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .enlace-login {

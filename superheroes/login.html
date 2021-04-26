@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital@1&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -32,27 +32,17 @@
     </header>
     <main>
         <div class="registro-nuevo">
-            <h2>Registro</h2>
+            <h2>Login</h2>
             <form action="contacto.html" method="POST">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
-
-                <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario">
 
                 <input type="password" id="password" name="password" placeholder="Contraseña">
-
-                <select name="pais" id="pais"> <!-- Buscar y agregar API paises -->
-                    <option value="argentina">Argentina</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="brasil">Brasil</option>
-                </select>
-
-                <input class="boton-resetear" type="reset" value="Resetear" id="resetear">
 
                 <input class="boton-entrar" type="submit" value="Entrar" id="entrar">
             </form>
             <p class="enlace-login">
-                <a href="./login.html">¿Ya tenés una cuenta?</a>
-                Ingresá
+                <a href="#">¿No tenés una cuenta?</a>
+                Registrarme
             </p>
         </div>
     </main>

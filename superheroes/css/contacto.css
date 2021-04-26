@@ -74,9 +74,8 @@ h2 {
   margin-bottom: 5%;
   text-align: left;
 }
-
-input,
-select {
+ 
+input, textarea {
   border: solid 1.5px black;
   color: black;
   display: block;
@@ -89,7 +88,7 @@ select {
 }
 
 .boton-resetear,
-.boton-entrar {
+.boton-enviar {
   background: #888888;
   border-radius: 23.011px;
   border: none;
@@ -105,24 +104,10 @@ select {
   width: 30%;
 }
 
-.boton-entrar {
+.boton-enviar {
   background-color: #1cd1b0;
   color: #000000;
   margin-left: 5%;
-}
-
-.enlace-login {
-  color: #000000;
-  font-family: Karla;
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 28px;
-}
-
-.enlace-login a {
-    color: #00669f;
-    text-decoration: none;
 }
 
 footer {
