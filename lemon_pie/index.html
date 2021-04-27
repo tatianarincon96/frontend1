@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Receta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
     <header>
         <nav>
             <a href="index.html"><img src="img/logo-front.png" alt="logo-front"></a>
-            <ul>
+            <ul type="none">
                 <li>
                     <a href="https://www.directoalpaladar.com/postres/71-recetas-postres-faciles-rapidos" target="_blank">Recetas
                         Dulces</a>
@@ -26,17 +27,20 @@
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
-            <img src="img/lemon-pie.png" alt="lemon-pie">
         </nav>
-        <h1>El clásico Lemon Pie</h1>
-        <p>Es el preferido de los que les gusta lo dulce pero no lo empalagoso. <strong>El lemon pie es una tarta</strong>, es decir, una
-            base de masa y un relleno. Como su nombre lo indica, está hecha con jugo de limón, azúcar y huevos. Todo eso
-            mezclado hace el famoso <em>custard</em>, el relleno cremoso amarillo que es tan típico del lemon pie.
-        </p>
     </header>
     <main>
+        <section class="lemon-pie">
+            <h1>El clásico Lemon Pie</h1>
+            <p class="parrafo">Es el preferido de los que les gusta lo dulce pero no lo empalagoso. <strong>El lemon pie es una tarta</strong>, es decir, una
+                base de masa y un relleno. Como su nombre lo indica, está hecha con jugo de limón, azúcar y huevos. Todo eso
+                mezclado hace el famoso <em>custard</em>, el relleno cremoso amarillo que es tan típico del lemon pie.
+            </p>
+        </section>
         <section>
-            <h2>Ingredientes para la masa</h2>
+            <i class="iconos fas fa-shopping-basket"></i>
+            <h2>Ingredientes</h2>
+            <h3>Para la masa</h3>
             <ul type="none">
                 <li>200g. gramos de harina 0000</li>
                 <li>50g. de azúcar</li>
@@ -44,7 +48,7 @@
                 <li>100g. de manteca</li>
             </ul>
 
-            <h2>Ingredientes para la crema</h2>
+            <h3>Para la crema</h3>
             <ul type="none">
                 <li>2150cc. de jugo de limón</li>
                 <li>1 cucharada de ralladura de limón</li>
@@ -52,7 +56,7 @@
                 <li>Leche condensada</li>
             </ul>
 
-            <h2>Ingredientes para el merengue</h2>
+            <h3>Para el merengue</h3>
             <ul type="none">
                 <li>240. de azúcar</li>
                 <li>3 claras</li>
@@ -60,6 +64,7 @@
         </section>
 
         <section>
+            <i class="iconos fas fa-list-ol"></i>
             <h2>Instrucciones</h2>
             <ol>
                 <li>Procesar o mezclar ligeramente la harina, el azúcar y la manteca fría curtada en cubitos, hasta
@@ -87,7 +92,7 @@
             </ol>
         </section>
     </main>
-    <footer style="background-color: gainsboro; text-align: center;">
+    <footer>
         <p>Todos los derechos reservados a TATIANA RINCON</p>
     </footer>
 </body>

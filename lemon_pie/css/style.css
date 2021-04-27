@@ -1,9 +1,76 @@
-h1 {
-    background-color: yellow;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    color: #242323;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Para imagen de lemon pie, que se vea opaco: Background-image: gradient, url de la imagen */
+nav ul {
+    padding: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.lemon-pie {
+    background-color: beige;
+    background-image: url("../img/lemon-pie.png");
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.lemon-pie::before {
+	background-color: rgba(0,0,0,0.5);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+    content:'';
+    top: 0;
+}
+
+h1 {
+    bottom: 15%;
+    color: cornsilk;
+    font-size: 60px;
+    position: absolute;
+}
+
+.parrafo {
+    bottom: 0px;
+    color: cornsilk; 
+    font-size: 25px;
+    margin: 0px;
+    position: absolute;
+}
+
+.iconos, h2 {
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section ul, ol {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 40px;
+}
+
+footer p {
+    background-color: gainsboro; 
+    font-size: 30px;
+    line-height: 50px;
+    padding: 10px;
+    text-align: center;
+}
