@@ -118,7 +118,7 @@ section {
   border-radius: 50%;
   left: 32%;
   position: absolute;
-  top: 24%;
+  top: 19%;
   width: 35%;
 }
 
@@ -145,10 +145,6 @@ section {
   line-height: 25px;
   margin-bottom: 70px;
   text-align: left;
-}
-
-.text-ww {
-  padding-bottom: 25px;
 }
 
 .ver-mas {
