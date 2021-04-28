@@ -62,18 +62,18 @@ nav ul li a {
 }
 
 section {
-  display: inline-block;
-  margin: 50px auto;
-  width: 30%;
+  display: inline;
+
 }
 
 .card {
   border-radius: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  left: 20%;
+  display: inline-block;
+  margin: 50px 25px;
   position: relative;
   text-align: center;
-  width: 70%;
+  width: 20%;
 }
 
 .card:hover {
@@ -96,6 +96,10 @@ section {
 
 .card-wonder-woman {
   background-image: url(../img/bg-wonderw.jpg);
+}
+
+.card-hq {
+  background-image: url(../img/bg_1.png);
 }
 
 .card-superman {
@@ -129,7 +133,7 @@ section {
   font-size: 1.5em;
   font-style: normal;
   font-weight: normal;
-  padding: 1rem;
+  padding: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -141,6 +145,10 @@ section {
   line-height: 25px;
   margin-bottom: 70px;
   text-align: left;
+}
+
+.text-ww {
+  padding-bottom: 25px;
 }
 
 .ver-mas {
