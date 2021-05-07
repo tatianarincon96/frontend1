@@ -1,0 +1,179 @@
+:root {
+  --colorPrimario: #ffffff;
+  --colorSecundario: #3c2313;
+  --colorTerciario: #222222;
+  --colorCuarto: #f0a83e;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.publicidad {
+  align-items: center;
+  background-color: var(--colorTerciario);
+  color: var(--colorPrimario);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.publicidad p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.idioma-moneda {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.idioma-moneda p,
+.iconos {
+  margin-left: 10px;
+}
+
+header {
+  align-items: center;
+  background-color: var(--colorCuarto);
+  color: var(--colorPrimario);
+  display: flex;
+  height: 12vh;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+header .logo {
+  align-items: center;
+  display: flex;
+}
+
+header .logo h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0px 5px;
+}
+
+header .logo h1 span {
+  color: var(--colorSecundario);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 10px;
+}
+
+header nav ul li a{
+  color: var(--colorPrimario);
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul li a::before {
+  background: var(--colorTerciario);
+  border-radius: 50px;
+  bottom: -10px;
+  content: "";
+  height: 5px;
+  position: absolute;
+  transition: width 0.5s;
+  width: 0;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+main {
+  background-color: wheat;
+  background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 90px - 24px);
+}
+
+section {
+  align-items: flex-end;
+  color: var(--colorPrimario);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px - 24px);
+  justify-content: center;
+}
+
+section h2,
+section h4,
+section a {
+  font-weight: 300;
+  margin: 12px 20px;
+}
+
+section h2 {
+  background-color: var(--colorPrimario);
+  border-radius: 5px;
+  color: var(--colorSecundario);
+  font-size: 2rem;
+  padding: 10px;
+}
+
+section a {
+  background-color: var(--colorCuarto);
+  border-radius: 5px;
+  color: var(--colorPrimario);
+  padding: 15px 23px;
+  text-decoration: none;
+}
+
+section a:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+footer {
+  align-items: center;
+  background-color: var(--colorTerciario);
+  color: var(--colorPrimario);
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  header nav,
+  header .contenedor-iconos {
+    display: none;
+  }
+  .menu-hamburguesa {
+    color: var(--colorPrimario);
+    display: flex;
+  }
+  .publicidad p,
+  footer p {
+    font-size: 0.8rem;
+  }
+  main {
+    background-position: right;
+  }
+  section {
+    align-items: center;
+  }
+  section h2 {
+    font-size: 1.8rem;
+  }
+}
