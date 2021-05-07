@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --gray: #222222;
+  --red: #fc200c;
+  --green: #39b24a;
+  --lightWhite: #f3f3f3;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--lightWhite);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: var(--gray);
+  color: var(--white);
+  padding: 0.5rem 1.25rem;
+  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  /*Añadimos flex*/
+  display: flex;
+  gap: 20px;
+}
+
+header .header__logo {
+  /*Añadimos flex*/
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .header__logo span,
+footer .footer__logo span {
+  color: var(--green);
+}
+header .header__logo span:nth-child(2),
+footer .footer__logo span:nth-child(2) {
+  color: var(--red);
+}
+
+.kangrebur {
+  display: none;
+}
+
+main {
+    padding: 35px 0px;
+    /* Alto del main: alto viewport - alto Header - alto Footer 
+       Me aseguro que el main ocupa todo el alto disponible */
+    min-height: calc(100vh - 100vh - 150vh);  
+}
+
+main .container {
+  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main section .card {
+  border-radius: 5px;
+  height: 21.875rem; /* 350px/16px (16px=1rem) */
+  width: 30.625rem;  /* 490px/16px (16px=1rem) */
+}
+
+main section .delivery {
+  background: url("../img/delivery.jpg");
+  color: var(--red);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+main section .delivery span {
+  color: var(--lightWhite);
+}
+main section .podio {
+  background: #fff;
+  font-weight: bold;
+  /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .podio h3 {
+  color: var(--red);
+  font-size: 24px;
+  text-align: center;
+  padding: 26px;
+  width: 100%;
+}
+.podio .top5 .podio__pizzas h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.top5 {
+  /*Añadimos flex*/
+  display: flex;
+  width: 40vw;
+  height: 40vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top5 .podio__pizzas ol li {
+  padding: 10px 0px;
+}
+
+.top5 .podio__img {
+  padding-bottom: 50px;
+  /*Añadimos flex*/
+  display: flex;
+  align-self: flex-end;
+}
+
+footer {
+  background: #222;
+  padding: 19px 20px;
+  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer__logo {
+  color: var(--lightWhite);
+  font-size: 14px;
+  /*Añadimos flex*/
+  order: 1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+footer ul {
+  color: var(--lightWhite);
+  /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer ul li:nth-child(1) {
+  order: -2;
+}
+
+footer ul li:nth-child(4) {
+  order: -1;
+}
+
+@media screen and (max-width:  768px) {
+   /* - Ocultar los botone de nav (del header)
+      - Añadir el ícono hamburguesa */
+    header nav ul   {
+      display: none;
+    }
+
+    .kangrebur {
+      display: flex;
+      padding-right: 20px;
+      font-size: 2rem;
+    }
+
+    main .container {
+      /*Añadimos flex*/
+      flex-direction: column;
+      align-items: center;
+    }
+    .top5 {
+      width: 50vh;
+    }
+}
