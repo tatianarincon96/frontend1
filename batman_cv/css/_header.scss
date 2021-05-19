@@ -1,0 +1,12 @@
+/* Header */
+header {
+    background-color: $tertiary-color;
+    text-align: center;
+    h1 {
+        @include uppercase();
+        background-color: $primary-color; 
+        color: $secondary-color;
+        letter-spacing: .8rem;
+        word-spacing: 2rem;
+    }
+}

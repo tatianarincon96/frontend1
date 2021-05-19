@@ -1,0 +1,29 @@
+/* Main */
+main {
+  font-size: 1rem;
+  margin: 50px 150px 15px;
+  text-align: left;
+  ul {
+    list-style-type: none;
+  }
+  .mayusculas {
+    @include uppercase();
+  }
+  h2 {
+    background-color: $primary-color;
+    color: rgba(138, 9, 0, 0.651);
+    letter-spacing: 0.8rem;
+    margin: 20px 0px;
+    padding: 10px;
+    word-spacing: 1rem;
+    @extend .mayusculas;
+    &:hover {
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+  }
+  span {
+    font-style: italic;
+    font-weight: bold;
+  }
+}
